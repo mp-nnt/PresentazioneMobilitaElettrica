@@ -37,6 +37,18 @@
 															<!-- collegamento alla view del fragment: info -->
 															<core:Fragment fragmentName="pabz.me.PresentazioneMobilitaElettrica.view.fragment.info" type="XML"/>
 														</IconTabFilter>
+														<IconTabFilter id="concessioni" icon="sap-icon://account" text="{i18n>conn}">
+															<!-- collegamento alla view del fragment: info -->
+															<core:Fragment fragmentName="pabz.me.PresentazioneMobilitaElettrica.view.fragment.concessioni" type="XML"/>
+														</IconTabFilter>
+														<IconTabFilter id="allegati" icon="sap-icon://account" text="{i18n>all}">
+															<!-- collegamento alla view del fragment: info -->
+															<core:Fragment fragmentName="pabz.me.PresentazioneMobilitaElettrica.view.fragment.attachment" type="XML"/>
+														</IconTabFilter>
+														<IconTabFilter id="allegatoA" icon="sap-icon://account" text="{i18n>allegA}">
+															<!-- collegamento alla view del fragment: info -->
+															<core:Fragment fragmentName="pabz.me.PresentazioneMobilitaElettrica.view.fragment.allegatoA" type="XML"/>
+														</IconTabFilter>
 													</items>
 												</IconTabBar>
 											</Panel>

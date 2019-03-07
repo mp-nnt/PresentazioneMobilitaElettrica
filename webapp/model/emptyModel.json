@@ -10,7 +10,7 @@
 	"trade": false,
 	"services": false,
 	"freelance": false,
-	"turism":false,
+	"turism": false,
 	"state": "",
 	"region": "",
 	"postcode": "",
@@ -23,7 +23,13 @@
 	"pec": "",
 	"italian": true,
 	"german": false,
-	"classImpP":false,
-	"classImpM":false,
-	"classImpG":false
+	"classImpP": false,
+	"classImpM": false,
+	"classImpG": false,
+
+	"CartaIdentita": [],
+	"Preventivi": [],
+	"Dichiarazioni": [],
+	"Pagamenti": [],
+	"Altro": []
 }
