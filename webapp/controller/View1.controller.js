@@ -478,6 +478,7 @@ sap.ui.define([
 			//creazione della coda di processo, con le funzioni che si andranno a richiamare
 			this._odataNuovaRichiesta(mParameters);
 			this._odataPosRichiesta(mParameters);
+			this._odataDocCreate(mParameters);
 			oModel.submitChanges({
 				"groupId": changeSetId,
 				//"changeSetId": changeSetId,
@@ -544,7 +545,7 @@ sap.ui.define([
 					//entity[""] = listA[i].tipologia;
 					entity["Importo"] = listA[i].importoEuro[0].toString();
 					//entity[""] = listA[i].numero[0].toString();
-					entity["Description"] = listA[i].descrizione.substring(40);
+					entity["Description"] = listA[i].descrizione.substring(0, 40);
 					oDataModel.create("/posizioniRichiestaSet", entity, param); //crea il collegamento CRM della /nuovaRichiestaSet
 				}
 
@@ -710,7 +711,7 @@ sap.ui.define([
 			};
 
 			reader.onerror = function (e) {
-				sap.m.MessageToast.show("Errore durante l'upload");
+				sap.m.MessageToast.show(this.getView().getModel("i18n").getResourceBundle().getText("errUpl"));
 			};
 
 			reader.readAsDataURL(file);
@@ -859,7 +860,10 @@ sap.ui.define([
 
 		getAttachmentTitleText: function (oUploadCollection) {
 			var aItems = this.byId(oUploadCollection).getItems();
-			return "N° di Allegati" + " (" + aItems.length + ")";
+			var nAllegati = this.getView().getModel("i18n").getResourceBundle().getText("Nallegati"); //i18n gestito con variabile dinamica
+			nAllegati = nAllegati.replace("%var%", aItems.length);
+
+			return nAllegati;
 		},
 
 		onModeChange: function (oEvent) {
