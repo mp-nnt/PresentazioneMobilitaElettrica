@@ -129,9 +129,9 @@
 						<f:fields>
 							<RadioButtonGroup id="classImpBot" columns="3">
 								<buttons>
-									<RadioButton text="{i18n>classImpP}" selected="{/classP}"/>
-									<RadioButton text="{i18n>classImpM}" selected="{/classM}"/>
-									<RadioButton text="{i18n>classImpG}" selected="{/classG}"/>
+									<RadioButton text="{i18n>classImpP}" selected="{/classImpP}"/>
+									<RadioButton text="{i18n>classImpM}" selected="{/classImpM}"/>
+									<RadioButton text="{i18n>classImpG}" selected="{/classImpG}"/>
 								</buttons>
 							</RadioButtonGroup>
 						</f:fields>
