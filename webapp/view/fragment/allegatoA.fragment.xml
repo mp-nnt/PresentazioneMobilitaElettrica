@@ -1,2 +1,133 @@
 <core:FragmentDefinition xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core"
-	xmlns:u="sap.ui.unified" xmlns:mvc="sap.ui.core.mvc"></core:FragmentDefinition>
+	xmlns:u="sap.ui.unified" xmlns:mvc="sap.ui.core.mvc">
+	<f:Form editable="true" id="allegatoA_frag" width="100%" class="personal-data-form">
+		<f:layout>
+			<f:GridLayout singleColumn="true"/>
+		</f:layout>
+		<f:formContainers>
+			<!-- Primo container con i dati dell'impresa richiedente. Titolo -->
+			<f:FormContainer title="{i18n>allegatoA_Title}">
+				<f:formElements>
+					<f:FormElement>
+						<f:fields>
+							<FormattedText htmlText="{i18n>allegatoA_1}"/>
+						</f:fields>
+					</f:FormElement>
+					<f:FormElement>
+						<f:fields>
+							<FormattedText htmlText="{i18n>allegatoA_2}" class="textcenter"/>
+						</f:fields>
+					</f:FormElement>
+					<f:FormElement>
+						<f:fields>
+							<FormattedText htmlText="{i18n>art1}" class="textcenter"/>
+						</f:fields>
+					</f:FormElement>
+					<f:FormElement>
+						<f:fields>
+							<FormattedText htmlText="{i18n>impresa}" class="textcenter_1"/>
+						</f:fields>
+					</f:FormElement>
+					<f:FormElement>
+						<f:fields>
+							<Text text="{i18n>allegatoA_3}"/>
+						</f:fields>
+					</f:FormElement>
+					<f:FormElement>
+						<f:fields>
+							<FormattedText htmlText="{i18n>art2}" class="textcenter"/>
+						</f:fields>
+					</f:FormElement>
+					<f:FormElement>
+						<f:fields>
+							<FormattedText htmlText="{i18n>eff}" class="textcenter_1"/>
+						</f:fields>
+					</f:FormElement>
+					<f:FormElement>
+						<f:fields>
+							<FormattedText htmlText="{i18n>allegatoA_4}"/>
+						</f:fields>
+					</f:FormElement>
+					<f:FormElement>
+						<f:fields>
+							<FormattedText htmlText="{i18n>art3}" class="textcenter"/>
+						</f:fields>
+					</f:FormElement>
+					<f:FormElement>
+						<f:fields>
+							<FormattedText htmlText="{i18n>tipoImp}" class="textcenter_1"/>
+						</f:fields>
+					</f:FormElement>
+					<f:FormElement>
+						<f:fields>
+							<FormattedText htmlText="{i18n>allegatoA_5}"/>
+						</f:fields>
+					</f:FormElement>
+					<f:FormElement>
+						<f:fields>
+							<FormattedText htmlText="{i18n>art4}" class="textcenter"/>
+						</f:fields>
+					</f:FormElement>
+					<f:FormElement>
+						<f:fields>
+							<FormattedText htmlText="{i18n>DatiUt}" class="textcenter_1"/>
+						</f:fields>
+					</f:FormElement>
+					<f:FormElement>
+						<f:fields>
+							<FormattedText htmlText="{i18n>allegatoA_6}"/>
+						</f:fields>
+					</f:FormElement>
+					<f:FormElement>
+						<f:fields>
+							<FormattedText htmlText="{i18n>art5}" class="textcenter"/>
+						</f:fields>
+					</f:FormElement>
+					<f:FormElement>
+						<f:fields>
+							<FormattedText htmlText="{i18n>eff1}" class="textcenter_1"/>
+						</f:fields>
+					</f:FormElement>
+					<f:FormElement>
+						<f:fields>
+							<FormattedText htmlText="{i18n>allegatoA_7}"/>
+						</f:fields>
+					</f:FormElement>
+					<f:FormElement>
+						<f:fields>
+							<FormattedText htmlText="{i18n>art6}" class="textcenter"/>
+						</f:fields>
+					</f:FormElement>
+					<f:FormElement>
+						<f:fields>
+							<FormattedText htmlText="{i18n>det}" class="textcenter_1"/>
+						</f:fields>
+					</f:FormElement>
+					<f:FormElement>
+						<f:fields>
+							<FormattedText htmlText="{i18n>allegatoA_8}"/>
+						</f:fields>
+					</f:FormElement>
+				</f:formElements>
+			</f:FormContainer>
+			<f:FormContainer title="{i18n>allegatoA_title1}">
+				<f:formElements>
+					<f:FormElement>
+						<f:fields>
+							<FormattedText htmlText="{i18n>allegatoA_9}"/>
+						</f:fields>
+					</f:FormElement>
+				</f:formElements>
+			</f:FormContainer>
+			<f:FormContainer title="{i18n>allegatoA_title2}">
+				<f:formElements>
+					<f:FormElement>
+						<f:fields>
+							<FormattedText htmlText="{i18n>allegatoA_10}"/>
+						</f:fields>
+					</f:FormElement>
+				</f:formElements>
+			</f:FormContainer>
+		</f:formContainers>
+	</f:Form>
+</core:FragmentDefinition>

@@ -78,6 +78,15 @@ body {
     border-bottom: 0.125rem solid #b4c420;
 }
 
+.sapMGHLITitle {
+    white-space: pre-wrap;
+    line-height: 20px;
+}
+
+.sapMListUl>.sapMLIB.sapMGHLI {
+    height: fit-content;
+}
+
 :not(.sapMBtnDisabled) .sapMBtnTransparent>.sapMBtnIcon,
 :not(.sapMBtnDisabled) .sapMBtnGhost>.sapMBtnIcon {
     color: #b4c420;
@@ -146,21 +155,27 @@ header #mycc_logo {
 /*BOTTONI FINE FORM*/
 
 span[id*='btn_save-inner'],
-span[id*='btn_confirm-inner'] {
+span[id*='btn_confirm-inner'],
+span[id*='btn_del-inner'],
+span[id*='btn_reqData-inner'] {
     background-color: #b4c420!important;
     border-color: #b4c420!important;
     border-radius: 4px;
 }
 
 span[id*='btn_save-inner'] span[id*='btn_save-content'],
-span[id*='btn_confirm-inner'] span[id*='btn_confirm-content'] {
+span[id*='btn_confirm-inner'] span[id*='btn_confirm-content'],
+span[id*='btn_del-inner'] span[id*='btn_del-content'],
+span[id*='btn_reqData-inner'] span[id*='btn_reqData-content'] {
     text-shadow: none;
     color: #000;
     font-weight: bold;
 }
 
 span[id*='btn_save-inner'] span[id*='btn_save-img'],
-span[id*='btn_confirm-inner'] span[id*='btn_confirm-img'] {
+span[id*='btn_confirm-inner'] span[id*='btn_confirm-img'],
+span[id*='btn_del-inner'] span[id*='btn_del-img'],
+span[id*='btn_reqData-inner'] span[id*='btn_reqData-img'] {
     text-shadow: none;
     color: #000!important;
 }
@@ -252,6 +267,25 @@ html.sap-desktop .sapContrast.sapMIBar.sapMFooter-CTX {
     font-size: 18px;
 }
 
-.fontBold{
-	font-weight: bold;
+.fontBold {
+    font-weight: bold;
+}
+
+.textarea {
+    width: 50rem;
+    height: 15rem;
+}
+
+.textcenter {
+    padding-top: 3%;
+    text-align: center;
+}
+
+.textcenter_1 {
+    padding-top: 1%;
+    text-align: center;
+}
+
+.tipologiaListArea {
+    height: 39px;
 }

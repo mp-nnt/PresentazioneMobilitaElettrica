@@ -1,2 +1,104 @@
-<core:FragmentDefinition xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core"
-	xmlns:u="sap.ui.unified" xmlns:mvc="sap.ui.core.mvc"></core:FragmentDefinition>
+<core:FragmentDefinition xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:t="sap.ui.table"
+	xmlns:u="sap.ui.unified" xmlns:mvc="sap.ui.core.mvc">
+	<f:Form editable="true" id="investmentForm" width="100%" class="investimento-form">
+		<f:layout>
+			<f:GridLayout singleColumn="true"/>
+		</f:layout>
+		<f:formContainers>
+			<f:FormContainer title="{i18n>concessioniLabel}">
+				<f:formElements>
+					<f:FormElement>
+						<f:fields>
+							<List id="idList" items="{ path:'/listA', sorter: { path: 'tipologia', descending: false, group: true}}" width="auto">
+								<items>
+									<CustomListItem>
+										<HBox fitContainer="true">
+											<HBox width="25%" justifyContent="SpaceBetween">
+												<Text text="n."/>
+												<Input value="{numero}" id="inp_numero" width="70%" textAlign="Right" class="investimento-form-input"/>
+											</HBox>
+											<HBox width="60%" justifyContent="SpaceBetween">
+												<Text text="{descrizione}"/>
+											</HBox>
+											<HBox width="15%" justifyContent="SpaceBetween">
+												<Input value="{path:'importoEuro', type:'sap.ui.model.type.Currency'}" id="inp_import" textAlign="Right" class="investimento-form-input"
+													change="onTotalListA"/>
+												<Text text="€" textAlign="Right"/>
+											</HBox>
+										</HBox>
+									</CustomListItem>
+								</items>
+							</List>
+						</f:fields>
+					</f:FormElement>
+				</f:formElements>
+			</f:FormContainer>
+			<f:FormContainer >
+				<f:formElements>
+					<!-- Inserimento totale dell'iva-->
+					<f:FormElement>
+						<f:fields>
+							<HBox fitContainer="true" justifyContent="SpaceBetween">
+								<Text text="{i18n>totalListA}" textAlign="Left"/>
+								<u:Currency value="{/totalListA}" currency="EUR" useSymbol="true" class="investimento-form-currency"/>
+							</HBox>
+						</f:fields>
+					</f:FormElement>
+				</f:formElements>
+			</f:FormContainer>
+			<!-- Inserimento del riquadro relativo alla marca da bollo e la data-->
+			<f:FormContainer title="{i18n>stamp_duty}">
+				<f:formElements>
+					<f:FormElement label="{i18n>stamp_duty_id}" id="stamp_duty_id_lbl">
+						<f:fields>
+							<MaskInput width="50%" id="stamp_duty_id_inp" value="{/stamp_duty_id}" placeholder="{i18n>stamp_duty_testo}" class="investimento-form-input"/>
+						</f:fields>
+					</f:FormElement>
+					<f:FormElement label="{i18n>stamp_duty_date}" id="stamp_duty_date_lbl">
+						<f:fields>
+							<DatePicker id="PlDate" width="50%"
+								value="{path: '/stamp_duty_date', type : 'sap.ui.model.odata.type.DateTime', constraints : {displayFormat : 'Date'}}"
+								placeholder="{i18n>stamp_duty_date_in}" class="investimento-form-input"/>
+						</f:fields>
+					</f:FormElement>
+					<f:FormElement>
+						<f:fields>
+							<Text text="{i18n>stamp_duty_didascalia}" textAlign="Center"/>
+						</f:fields>
+					</f:FormElement>
+				</f:formElements>
+			</f:FormContainer>
+			<!-- Fine: Inserimento del riquadro relativo alla marca da bollo e la data-->
+			<f:FormContainer>
+				<f:formElements>
+					<f:FormElement>
+						<f:fields>
+							<FormattedText htmlText="{i18n>stampdutytext}" width="100%"/>
+						</f:fields>
+					</f:FormElement>
+				</f:formElements>
+			</f:FormContainer>
+			<f:FormContainer title="{i18n>privacyLabel}">
+				<f:formElements>
+					<f:FormElement>
+						<f:fields>
+							<FormattedText htmlText="{i18n>privacyText}"/>
+						</f:fields>
+					</f:FormElement>
+				</f:formElements>
+			</f:FormContainer>
+			<f:FormContainer>
+				<f:FormElement label="{i18n>luogoData}">
+					<f:fields>
+						<Input width="50%" id="luogoData" value="{/luogoData}" class="investimento-form-input"/>
+					</f:fields>
+				</f:FormElement>
+				<f:FormElement label="{i18n>firma}">
+					<f:fields>
+						<Input width="50%" id="firma" value="{/firma}" class="investimento-form-input"/>
+					</f:fields>
+				</f:FormElement>
+			</f:FormContainer>
+		</f:formContainers>
+	</f:Form>
+</core:FragmentDefinition>

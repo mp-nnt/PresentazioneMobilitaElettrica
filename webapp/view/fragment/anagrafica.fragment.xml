@@ -65,7 +65,7 @@
 					</f:FormElement>
 					<f:FormElement label="{i18n>postCode}" id="postCode_lbl">
 						<f:fields>
-							<Input width="50%" id="postCode_inp" value="{/postCode}" editable="false" class="personal-data-form-input"/>
+							<Input width="50%" id="postCode_inp" value="{/postcode}" editable="false" class="personal-data-form-input"/>
 						</f:fields>
 					</f:FormElement>
 					<f:FormElement label="{i18n>city}" id="city_lbl">

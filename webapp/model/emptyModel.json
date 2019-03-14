@@ -1,5 +1,5 @@
 {
-	"processType": "",
+	"processType": "ZAPE",
 	"surname": "",
 	"name": "",
 	"owner": "",
@@ -26,10 +26,67 @@
 	"classImpP": false,
 	"classImpM": false,
 	"classImpG": false,
+	"stamp_duty_id": "",
+	"stamp_duty_date": "",
+
+	"listA": [{
+		"tipologia": "a) L'acquisto dei seguenti veicoli per il trasporto di persone appartenenti alla classe M1 e per il trasporto di merci appartenenti alla classe N1 e N2 ai sensi dell'allegato Ii parte A della direttiva 2007/46/CE, purchè i rivenditori concedano uno sconto almeno di pari l'importo al contributo previsto previsto dai vigenti criteri:",
+		"numero": "",
+		"descrizione": " veicoli elettrici a batteria BEV (Battery Electric Vehicales)",
+		"importoEuro": ""
+	}, {
+		"tipologia": "a) L'acquisto dei seguenti veicoli per il trasporto di persone appartenenti alla classe M1 e per il trasporto di merci appartenenti alla classe N1 e N2 ai sensi dell'allegato Ii parte A della direttiva 2007/46/CE, purchè i rivenditori concedano uno sconto almeno di pari l'importo al contributo previsto previsto dai vigenti criteri:",
+		"numero": "",
+		"descrizione": " veicoli a celle a combustibile H2 FCEV (Fuel Cell Electric Vehicles)",
+		"importoEuro": ""
+	}, {
+		"tipologia": "a) L'acquisto dei seguenti veicoli per il trasporto di persone appartenenti alla classe M1 e per il trasporto di merci appartenenti alla classe N1 e N2 ai sensi dell'allegato Ii parte A della direttiva 2007/46/CE, purchè i rivenditori concedano uno sconto almeno di pari l'importo al contributo previsto previsto dai vigenti criteri:",
+		"numero": "",
+		"descrizione": "veicoli elettrici a batteria con range extender (BEV con REX) con batterie di capacità di almeno 15 kWh; questi veicoli non possono produrre più di 50 g di emissioni di CO2 per km",
+		"importoEuro": ""
+	}, {
+		"tipologia": "a) L'acquisto dei seguenti veicoli per il trasporto di persone appartenenti alla classe M1 e per il trasporto di merci appartenenti alla classe N1 e N2 ai sensi dell'allegato Ii parte A della direttiva 2007/46/CE, purchè i rivenditori concedano uno sconto almeno di pari l'importo al contributo previsto previsto dai vigenti criteri:",
+		"numero": "",
+		"descrizione": "veicoli ibridi plug-in PHEV (Plug-in-Hybrid Electric Vehicles); questi veicoli non possono produrre più di 50 g di emissioni di CO2 per km",
+		"importoEuro": ""
+	}, {
+		"tipologia": "b) L'acquisto di veicoli elettrici:",
+		"numero": "",
+		"descrizione": "veicoli elettrici a due, tre o quattro ruote appartenenti alle classi L1e-B, L2e, L3e-A1, L5e e L6e",
+		"importoEuro": ""
+	}, {
+		"tipologia": "b) L'acquisto di veicoli elettrici:",
+		"numero": "",
+		"descrizione": "veicoli elettrici pesanti a quattro ruote della classe L7e",
+		"importoEuro": ""
+	}, {
+		"tipologia": "c) L'acquisto di bici cargo con portata complessiva minima di 150 kg con o senza motore ausiliario elettrico appartenente alla classe di veicoli L1e-A, concepita esclusivamente per il trasporto di materiale e merci:",
+		"numero": "",
+		"descrizione": "bici cargo elettriche",
+		"importoEuro": ""
+	}, {
+		"tipologia": "c) L'acquisto di bici cargo con portata complessiva minima di 150 kg con o senza motore ausiliario elettrico appartenente alla classe di veicoli L1e-A, concepita esclusivamente per il trasporto di materiale e merci:",
+		"numero": "",
+		"descrizione": "bici cargo",
+		"importoEuro": ""
+	}, {
+		"tipologia": "d) L'acquisto e l'installazione di stazioni per la ricarica:",
+		"numero": "",
+		"descrizione": "l'acquisto e l'installazione di stazioni di ricarica per veicoli elettrici",
+		"importoEuro": ""
+	}, {
+		"tipologia": "d) L'acquisto e l'installazione di stazioni per la ricarica:",
+		"numero": "",
+		"descrizione": "la stipula di contratti di vendita con riserva della proprietà di una stazione di ricarica da parte del fornitore del servizio. Tali contratti di durata di almeno tre e massimo nove anni, devono prevedere alla scadenza degli stessi il trasferimento obbligatorio della proprietà del bene agevolato",
+		"importoEuro": ""
+	}],
+	"totalListA": 0,
+	"luogoData": "",
 
 	"CartaIdentita": [],
 	"Preventivi": [],
 	"Dichiarazioni": [],
 	"Pagamenti": [],
 	"Altro": []
+
 }

@@ -159,4 +159,20 @@
 			</UploadCollection>
 		</content>
 	</Panel>
+	<f:Form editable="true" id="attachForm" width="100%">
+		<f:layout>
+			<f:GridLayout singleColumn="true"/>
+		</f:layout>
+		<f:formContainers>
+			<f:FormContainer>
+				<f:formElements>
+					<f:FormElement>
+						<f:fields>
+							<FormattedText htmlText="{i18n>infoAllegati}"/>
+						</f:fields>
+					</f:FormElement>
+				</f:formElements>
+			</f:FormContainer>
+		</f:formContainers>
+	</f:Form>
 </core:FragmentDefinition>
