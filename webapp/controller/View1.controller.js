@@ -19,7 +19,7 @@ sap.ui.define([
 		uploadJSON: {},
 		ArrayId: ["CartaIdentita", "Preventivi", "Dichiarazioni", "Pagamenti", "Altro"],
 		onInit: function () {
-			this.getView().setModel(new sap.ui.model.json.JSONModel("model/emptyModel.json")); //collega il controller all'emptyModel.json. Necessita della libreria
+			//this.getView().setModel(new sap.ui.model.json.JSONModel("model/emptyModel.json")); //collega il controller all'emptyModel.json. Necessita della libreria
 			//"sap/ui/model/json/JSONModel" e della variabile JSONModel nella function()
 			this.getView().setModel(new JSONModel({
 				"maximumFilenameLength": 80,
