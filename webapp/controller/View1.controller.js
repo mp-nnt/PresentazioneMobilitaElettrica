@@ -525,6 +525,7 @@ sap.ui.define([
 			if (oModel.getProperty("/classImpG")) {
 				entity["Zzfld000031"] = "C";
 			}
+			entity["Zzfld00002x"] = this.getOwnerComponent().instanceId; //passa in backend in valore del wfId
 			oDataModel.create("/nuovaRichiestaSet", entity, param); //crea il collegamento CRM della /nuovaRichiestaSet
 		},
 
